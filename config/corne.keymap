@@ -8,21 +8,19 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define DEFAULT 0
-#define LOW     1
-#define UP      2
-
 / {
         keymap {
                 compatible = "zmk,keymap";
+                
                 default_layer {
                         bindings = <
    &kp ESC    &kp Q   &kp W    &kp E    &kp R    &kp T      &kp Y      &kp U        &kp I        &kp O      &kp P     &kp BSPC
    &kp LCTRL  &kp A   &kp S    &kp D    &kp F    &kp G      &kp H      &kp J        &kp K        &kp L      &kp SEMI  &kp SQT
    &kp LSHFT  &kp Z   &kp X    &kp C    &kp V    &kp B      &kp N      &kp M        &kp COMMA    &kp DOT    &kp FSLH  &kp RSHFT
-                               &kp LGUI &mo LOW  &kp RET    &kp SPACE  &mo UP       &kp RALT
+                               &kp LGUI &mo 1    &kp RET    &kp SPACE  &mo 2        &kp RALT
                         >;
                 };
+
                 lower_layer {
                         bindings = <
    &kp TAB    &kp F1  &kp F2   &kp F3   &kp F4   &kp PSCRN  &kp C_PREV &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT &kp C_PP  &kp INS
